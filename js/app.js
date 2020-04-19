@@ -28,4 +28,22 @@ function widthScrollbar() {
 }
 //TODO Task 2
 
+//TODO Task 3
+const btn3 = document.querySelector('.task3 button');
+btn3.addEventListener('click', midfield);
+
+function midfield() {
+    const field = document.getElementById('field');
+    const ball = document.getElementById('ball');
+
+    let clientWidthField = field.clientWidth;
+    let clientHeightField = field.clientHeight;
+    let clientWidthBall = ball.clientWidth;
+    let clientHeightBall = ball.clientHeight;
+
+    ball.style.left = Math.round((clientWidthField / 2) - (clientWidthBall / 2))  + 'px';
+    ball.style.top = Math.round((clientHeightField / 2) - (clientHeightBall / 2)) + 'px';
+}
+//TODO Task 3
+
 
