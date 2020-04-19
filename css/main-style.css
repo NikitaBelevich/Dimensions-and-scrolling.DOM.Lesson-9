@@ -9,5 +9,10 @@ input[type="number"]{
     width: 80px;
 }
 
-
+.scroll-block-1{
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    overflow-x: auto;
+}
 
