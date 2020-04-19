@@ -17,8 +17,15 @@ function scrollFromBottom() {
 }
 //TODO Task 1
 
+//TODO Task 2
+const btn2 = document.querySelector('.task2 button');
+btn2.addEventListener('click', widthScrollbar);
 
-
-
+function widthScrollbar() {
+    const scrollBlock2 = document.querySelector('.scroll-block-2');
+    const widthScroll = scrollBlock2.offsetWidth - scrollBlock2.clientWidth;
+    console.log('Width Scrollbar: ', widthScroll);
+}
+//TODO Task 2
 
 
